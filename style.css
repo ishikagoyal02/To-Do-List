@@ -65,6 +65,18 @@ body{
     width: 14%;
     text-align: center;
     font-size: 40%;
-    margin-top: 30px;
+    margin-top: 39px;
     margin-left: 80%;
+}
+
+.result
+{
+    margin-top: 1.2%;
+    height: 130px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(245, 235, 235);
+    border-radius: 2%;
 }

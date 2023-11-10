@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    background-image: linear-gradient(to right, rgb(241, 156, 241),rgb(221, 204, 204));  /*for bg color ;*/
+    height: 100vh;     /*for color fit the screens*/
+    display: flex;     /*for centralizing the box*/
+    align-items: center;
+    justify-content: center;
+}
+
+.box
+{
+    border: 1px solid;
+    border-color: rgb(115, 120, 124);  /*border color */
+    height: 70%;
+    width: 50%;
+    background-attachment: fixed;
+    background-color: #a3a6c7;
+    border-radius: 2%; 
+    box-shadow: 1px rgb(219, 149, 173);
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center ;
+    font-size: 40px;
+    padding: 2%;
+    
+}
+
+.main{
+    display: inline;     /*for centralizing the box*/
+    align-items: center;
+    justify-content: center;
+}
+
+.add{
+    border: 1px solid;
+    border-color: rgb(35, 41, 48);  /*border color */
+    
+}
+
+.type{
+    margin-top:80px ;
+    padding: 3px 3px;
+    border: 2px solid wheat;
+    height: 40px;
+    width: 80%;
+    border-radius: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center ;
+    font-size: 27px;
+}
+.plus{
+    border: 2px solid wheat;
+    height: 50px;
+    width: 8%;
+    font-size: 27px;
+    text-align:center ;
+
+}
+
+.dlt
+{
+    width: 14%;
+    text-align: center;
+    font-size: 40%;
+    margin-top: 30px;
+    margin-left: 80%;
+}

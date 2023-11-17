@@ -60,6 +60,16 @@ body{
 
 }
 
+.minusbtn
+{
+    border: 2px solid wheat;
+    height: 30px;
+    width: 8%;
+    font-size: 27px;
+    text-align:center ;
+    margin-left: 70%;
+}
+
 .dlt
 {
     width: 14%;

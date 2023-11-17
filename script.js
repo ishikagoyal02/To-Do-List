@@ -15,8 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const result = document.querySelector(".result.type");
     const dlt=document.querySelector(".plus.dlt");
 
+    const newbutton=document.createElement('button');
+    newbutton.textContent='-';
+
     btnplus.addEventListener('click', function () {
         result.innerText +=listitem.value + "\n";
+
+        
+        result.appendChild(newbutton)
     });
 
     dlt.addEventListener('click',function(){

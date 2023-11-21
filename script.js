@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const box=document.querySelector(".box");
     const listitem = document.getElementById("type");
     const btnplus = document.getElementById("plus");
-    //const result = document.querySelector(".result.type");
     const dlt = document.querySelector(".plus.dlt");
     const m=document.querySelector(".m");
+
     const result= document.createElement("div");
     result.className="result";
+
+    const dltbtn=document.createElement("button");
+    dltbtn.textContent="Delete All"
+    dltbtn.className="plus dlt";
 
     var flag=0;
 
@@ -29,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if(flag==0)
             {
+                box.appendChild(dltbtn);
                 m.appendChild(result);
                 flag=1;
             }

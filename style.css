@@ -73,7 +73,8 @@ h1 {
 
 .result {
     margin-top: 1.2%;
-    height: 70%;
+    margin-bottom: 1.2%;
+    height: 50%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -83,6 +84,7 @@ h1 {
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #5e3c58 #f8e4f5;
+    
 }
 
 .result::-webkit-scrollbar {

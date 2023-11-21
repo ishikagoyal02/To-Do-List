@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
             newbutton.className = "minusbtn";
             taskDiv.className="result type";
 
-            
-
             taskDiv.textContent = task;
             taskDiv.appendChild(newbutton);
 
@@ -46,14 +44,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    dlt.addEventListener('click', function () {
+    dltbtn.addEventListener('click', function () {
         result.innerHTML = "";
+        flag=0;
+        box.removeChild(dltbtn);
     });
 
-    result.addEventListener('click', function (event) {
+    box.addEventListener('click', function (event) {
         if (event.target.classList.contains('minusbtn')) {
             const taskDiv = event.target.parentNode;
             result.removeChild(taskDiv);
         }
+
+        if(result.innerHTML=="")
+            box.removeChild(dltbtn);
     });
 });

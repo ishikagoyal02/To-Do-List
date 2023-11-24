@@ -14,11 +14,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var flag=0;
 
-    btnplus.addEventListener('click', function () {
-        const task = listitem.value;
+    // btnplus.addEventListener('click',addTask(Event));
+
+    // listitem.addEventListener('keypress',function(Event){
+    //     if(Event.key==="Enter")
+    //         addTask(Event)
+    // })
+
+    btnplus.addEventListener('click', function (event) {
+        console.log("button clicked")
+        addTask(event);
+    });
+
+    listitem.addEventListener('keypress', function (event) {
+        console.log("pressed")
+        if (event.key === "Enter") {
+            addTask(event);
+        }
+    });
 
 
-        if (task.trim() !== '') {
+    function addTask(event){
+        
+        const task=listitem.value;
+
+        if (task.trim() !== '' || (event.key==='Enter')) {
             const taskDiv = document.createElement('div');
             const newbutton = document.createElement('button');
             newbutton.textContent = '-';
@@ -42,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Scroll to the bottom when a new task is added
             result.scrollTop = result.scrollHeight;
         }
-    });
+    };
 
     dltbtn.addEventListener('click', function () {
         result.innerHTML = "";
@@ -54,9 +74,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.target.classList.contains('minusbtn')) {
             const taskDiv = event.target.parentNode;
             result.removeChild(taskDiv);
+    
+            // If result is empty, remove the Delete All button and result from the box
+            if (result.innerHTML === "") {
+                box.removeChild(dltbtn);
+                m.removeChild(result);
+                flag = 0;  // Reset the flag
+            }
         }
-
-        if(result.innerHTML=="")
-            box.removeChild(dltbtn);
     });
-});
+    
+})

@@ -82,19 +82,19 @@ h1 {
     background-color: #f8e4f5;
     border-radius: 5px;
     overflow-y: auto;
-    max-height: 70%;
+    max-height: 50%;
     scrollbar-width: thin;
     scrollbar-color: #5e3c58 #f8e4f5;
     
 }
 
-/* .result::-webkit-scrollbar {
+.result::-webkit-scrollbar {
     width: 12px;
 }
 
 .result::-webkit-scrollbar-thumb {
     background-color: #5e3c58;
-} */
+}
 
 .result div {
     display: flex;

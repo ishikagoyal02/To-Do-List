@@ -14,19 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var flag=0;
 
-    // btnplus.addEventListener('click',addTask(Event));
-
-    // listitem.addEventListener('keypress',function(Event){
-    //     if(Event.key==="Enter")
-    //         addTask(Event)
-    // })
-
     btnplus.addEventListener('click', function (event) {
         console.log("button clicked")
         addTask(event);
     });
 
-    listitem.addEventListener('keypress', function (event) {
+    listitem.addEventListener('keypress', function (event) {                    //1st
         console.log("pressed")
         if (event.key === "Enter") {
             addTask(event);
@@ -34,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    function addTask(event){
+    function addTask(event){                                                    //2nd
         
         const task=listitem.value;
 
